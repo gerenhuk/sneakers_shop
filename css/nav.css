@@ -1,0 +1,132 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.header {
+  border-bottom: 2px solid #e1e1e1;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  align-items: center;
+  padding: 10px 0;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header__icon {
+  display: flex;
+  justify-content: end;
+}
+
+.menu__link {
+  color: #000;
+}
+
+/* ----- footer start */
+
+.footer {
+  background: #000;
+  margin-top: 200px;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.footer h2 {
+  font-size: 128px;
+  text-transform: uppercase;
+  margin-bottom: 150px;
+}
+
+.footer .shoping {
+  color: var(--orange);
+  text-transform: capitalize;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  height: 600px;
+  align-items: center;
+  position: relative;
+}
+
+.footer-item:last-child {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-item:last-child::before {
+  content: "";
+  border-left: 1px solid #e1e1e1;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  left: -50px;
+}
+
+.footer-menu {
+  font-size: 20px;
+}
+
+.footer-menu .menu-link {
+  padding: 20px 50px 20px 0;
+  display: inline-block;
+  position: relative;
+  z-index: 50;
+}
+
+.social-menu {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  z-index: 100;
+}
+
+.social-menu .menu-link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: rgb(37, 37, 37);
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 100%;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  z-index: 50;
+  transition: 100ms linear;
+}
+
+.social-menu .menu-link:hover {
+  background: #ECEFF1;
+  color: #000;
+}

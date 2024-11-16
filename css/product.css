@@ -1,0 +1,283 @@
+.hero-section {
+  height: calc(70vh + 100px);
+  background: url(../img/product/sneaekrs/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-section-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-menu .menu-link,
+.hero-menu .menu-list {
+  color: #fff;
+  font-size: 20px;
+}
+
+.sneakers-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.sneakers-grid .sneakers-item:first-child {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px 20px;
+}
+.sneakers-grid .sneakers-item .main-image {
+  display: flex;
+  justify-content: center;
+}
+.sneakers-grid .sneakers-item .main-image img {
+  width: 100%;
+  /* max-width: 500px; */
+  -o-object-fit: cover;
+    object-fit: cover;
+  height: 50vh;
+}
+.sneakers-grid .sneakers-item .thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.sneakers-grid .sneakers-item .thumbnail-grid img {
+  width: 100%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  height: 100px;
+  -o-object-fit: cover;
+    object-fit: cover;
+}
+.sneakers-grid .sneakers-item .thumbnail-grid img:hover {
+  border-color: #333;
+}
+.sneakers-grid .product-title {
+  font-weight: 400;
+  font-size: 36px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.sneakers-grid strong {
+  color: #000;
+}
+.sneakers-grid .product-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 60px;
+}
+.sneakers-grid .size-options, .sneakers-grid .color-options {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  margin-bottom: 40px;
+}
+.sneakers-grid .size-options button, .sneakers-grid .color-options button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+.sneakers-grid .size-options button.active, .sneakers-grid .color-options button.active {
+  border-color: orange;
+}
+.sneakers-grid .price {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.sneakers-grid .qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sneakers-grid .qty-controls button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.sneakers-grid .qty-controls input {
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.sneakers-grid .add-to-cart {
+  background: #f46639;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+.sneakers-grid .add-to-cart:hover {
+  background-color: #ff6600;
+}
+.sneakers-grid .size-btn,
+.sneakers-grid .color-btn {
+  border-radius: 100%;
+}
+.sneakers-grid .control-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sneakers-grid .control-flex p {
+  color: #e1e1e1;
+}
+
+
+.materials {
+  margin-top: 100px;
+}
+.materials .materials-title,
+.materials .materilas-subtitle {
+  text-align: center;
+}
+.materials .materials-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.materials .materilas-subtitle {
+  text-transform: capitalize;
+  color: var(--light-gray);
+}
+.materials .materials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.materials .material-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.materials li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.materials li img {
+  height: 150px;
+}
+.materials img {
+  border-radius: 12px;
+}
+
+.related-product {
+  margin-top: 150px;
+}
+.related-product h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.material-menu h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.material-menu p {
+  text-transform: capitalize;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  transition: 100ms linear;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 10px rgba(185, 23, 174, 0.568);
+}
+.product-card .product-text {
+  padding: 12px 8px;
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.product-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.product-card .fa-star {
+  color: #f46639;
+  font-size: 20px;
+  margin-right: 4px;
+}
+.product-card .reviews {
+  font-size: 14px;
+}
+.product-card .product-price {
+  margin-top: 8px;
+}
+.product-card .product-list {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.product-block {
+  display: flex;  
+  justify-content: space-between;
+}
+
+.product-card .fa-star {
+  color: #f46639;
+}
+
+.reviews {
+  color: #e1e1e1;
+}

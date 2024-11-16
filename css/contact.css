@@ -1,0 +1,181 @@
+.hero-section {
+  height: calc(70vh + 100px);
+  background: url(https://images.unsplash.com/photo-1543107097-ffe418c8d0f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-section-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-menu .menu-link,
+.hero-menu .menu-list {
+  color: #fff;
+  font-size: 20px;
+}
+
+.section-description {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-description h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 50px;
+}
+.contact .contact-item h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.contact .contact-item p {
+  margin-bottom: 20px;
+}
+.contact .contact-list {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  width: 300px;
+}
+.contact .contact-list i {
+  color: #fff;
+  background: #f46639;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+}
+.contact .info-name {
+  font-size: 20px;
+  line-height: 40px;
+}
+.contact .info-description {
+  color: #e1e1e1;
+}
+.contact .menu-link {
+  color: #f46639;
+  background: #feeeea;
+  border: 1px solid #f46639;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #e1e1e1;
+  color: #000;
+  border: 1px solid #333;
+}
+.contact .send {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.contact .flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 6px;
+}
+.contact .form label {
+  position: relative;
+}
+.contact .form label .input {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+.contact .form label .input + span {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+.contact .form label .input:-moz-placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.contact .form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.contact .form label .input:focus + span,
+.contact .form label .input:valid + span {
+  color: #000000;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.contact .input {
+  font-size: 18px;
+}
+.contact .submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  background-color: #f46639;
+}
+.contact .submit:hover {
+  background-color: rgba(0, 191, 255, 0.5882352941);
+}
+.contact .require {
+  height: 120px;
+}
+.contact textarea {
+  background: #fff;
+  outline: none;
+  padding: 20px;
+}
+
+.map {
+  height: 40vh;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contact-wrapper .footer {
+  margin-top: 0;
+}
